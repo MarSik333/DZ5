@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ5</title>
+</head>
+<body>
+    <main>
+        <div class="block">
+            <form action="" class="form">
+                <div class="form-group">
+<!-- name -->
+                    <div class="form-group-input">
+                        <label for="fullmame">Full name</label>
+                        <input type="text" id="fullmame" required>
+                    </div>
+<!--mail-->
+                    <div class="form-group-input">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" required>
+                    </div>
+                </div>
+<!-- password -->
+                <div class="form-group">
+
+                    <div class="form-group-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+<!--password2-->
+                    <div class="form-group-input">
+                        <label for="password-again">The password again</label>
+                        <input id="password-again" type="password" required>
+                    </div>
+                </div>
+<!-- Sex -->
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <input type="radio" id="male" 
+                        name="sex" value="name" required>
+                        <label for="male">Male</label>
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="female" name="sex" value="famile" required>
+                        <label for="female">Famele</label>
+                    </div>
+                </div>
+<!-- age -->
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <label for="age">Age</label>
+                        <input id="age" type="number" min="18" max="110" required>
+                    </div>
+                </div>
+<!-- Course -->
+                <div class="form-group">
+                    <div class="form-group-select">
+                        <label for="course">Course</label>
+                        <select name="course" id="country" required>
+                            <option value="Front-End">Front-End</option>
+                            <option value="Back-End">Back-End</option>
+                            <option value="Project Management">Project Management</option>
+                            <option value="QA Manual">QA Manual</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group-select">
+                        <label for="course">Full address</label>
+                        <textarea name="citi" id="citi" cols="20" rows="3" required>Сountry, Region, City/settlement, Street</textarea>
+                    </div>
+                </div>
+                <div class="form-group-radio">
+                    <input type="radio" id="privacy" name="privacy" value="privacy" required>
+                    <label for="privacy">Accept the terms of the privacy policy</label>
+                </div>
+
+                <div class="send-reset">
+                    <input type="reset" value="reset">
+	                <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
